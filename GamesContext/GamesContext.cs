@@ -11,36 +11,37 @@ using GamesDll;
 
 namespace GamesContext
 {
-    public class GamesContext : DbContext
+    public class GamesContextClass : DbContext
     {
 
         public DbSet<Games> gamesSet { get; set; }
 
-        public GamesContext(string nameOrConnectionString) : base(nameOrConnectionString)
+        public GamesContextClass(string nameOrConnectionString) : base(nameOrConnectionString)
         {
         }
 
-        public GamesContext(string nameOrConnectionString, DbCompiledModel model) : base(nameOrConnectionString, model)
+        public GamesContextClass(string nameOrConnectionString, DbCompiledModel model) : base(nameOrConnectionString, model)
         {
         }
 
-        public GamesContext(DbConnection existingConnection, bool contextOwnsConnection) : base(existingConnection, contextOwnsConnection)
+        public GamesContextClass(DbConnection existingConnection, bool contextOwnsConnection) : base(existingConnection, contextOwnsConnection)
         {
         }
 
-        public GamesContext(ObjectContext objectContext, bool dbContextOwnsObjectContext) : base(objectContext, dbContextOwnsObjectContext)
+        public GamesContextClass(ObjectContext objectContext, bool dbContextOwnsObjectContext) : base(objectContext, dbContextOwnsObjectContext)
         {
         }
 
-        public GamesContext(DbConnection existingConnection, DbCompiledModel model, bool contextOwnsConnection) : base(existingConnection, model, contextOwnsConnection)
+        public GamesContextClass(DbConnection existingConnection, DbCompiledModel model, bool contextOwnsConnection) : base(existingConnection, model, contextOwnsConnection)
         {
         }
 
-        protected GamesContext()
+        protected GamesContextClass()
         {
+
         }
 
-        protected GamesContext(DbCompiledModel model) : base(model)
+        protected GamesContextClass(DbCompiledModel model) : base(model)
         {
         }
     }

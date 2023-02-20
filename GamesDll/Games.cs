@@ -8,13 +8,14 @@ namespace GamesDll
 {
     public class Games
     {
-        string Name { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
 
-        string Creator { get; set; }
+        public string Creator { get; set; }
 
-        string Genre { get; set; }
+        public string Genre { get; set; }
 
-        DateTime Date { get; set; }
+        public DateTime Date { get; set; }
 
         public Games() { }
     }
